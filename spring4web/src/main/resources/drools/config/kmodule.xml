@@ -1,0 +1,16 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:kie="http://drools.org/schema/kie-spring"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+                           http://drools.org/schema/kie-spring classpath:org/kie/spring/kie-spring-6.0.0.xsd">
+
+    <kie:kmodule id="kModule">
+        <kie:kbase name="SimpleRuleKBase" packages="drools.rules">
+            <kie:ksession name="simpleRuleKSession" type="stateless"/>
+        </kie:kbase>
+    </kie:kmodule>
+
+    <!--todo:什么功能?学习spring集成drools-->
+    <bean id="kiePostProcessor" class="org.kie.spring.KModuleBeanFactoryPostProcessor"/>
+
+</beans>
