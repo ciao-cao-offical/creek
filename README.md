@@ -1,17 +1,20 @@
-# creek(**小溪**)
-> [小溪汇成江河,江河汇成大海]
-####
-学习内容:
-1. log4j2
-    >1.完成了基本使用方式练习
-2. junit
-    >1.完成了基本使用方式练习
-3. spring4
-    >1.spring4web项目的创建  
-    2.spring4依赖注入
-4. drools(尚未完成)
-    >1.spring4集成drools  
-    2.drools未生效?
+# CREEK【小溪】
+> 【小溪汇成江河，江河汇成大海】<br>
+author：<a url='https://github.com/ciao-cao-offical'>@ciao-cao-offical</a><br>
+email：[843078365@qq.com](843078365@qq.com)<br>
+
+### 学习内容：
+> ##### STAGE-1 </br>
+1. junit
+
+> **Java依赖**<br/>
+1. hamcrest-core（version:2.2）
+2. junit（version:4.13）
+
+
+
+
+
 
 
 

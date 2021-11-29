@@ -5,14 +5,28 @@
   <artifactId>creek</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spring4web</module>
-    </modules>
+  <modules>
+    <module>creek-test</module>
+  </modules>
 
-    <name>CREEK</name>
+  <name>CREEK</name>
   <description>点滴的功夫</description>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/ciao-cao-offical/creek</url>
+
   <dependencies>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>2.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13</version>
+      <scope>test</scope>
+    </dependency>
 
   </dependencies>
 </project>

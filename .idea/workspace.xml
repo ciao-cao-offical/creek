@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/README.md" line="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba31d0db-1052-42f6-a63d-7509992bd035" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/creek-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creek-test/src/test/java/com/ciao/practice/JunitHelloTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creek.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/java/com/caochengyin/model/pojo/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/resources/drools/config/kmodule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/resources/drools/rules/age.drl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/resources/spring/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/test/java/com/caochengyin/DroolsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/test/java/com/caochengyin/Junit4Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/src/test/resources/spring-config-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/classes/com/caochengyin/model/pojo/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/classes/drools/config/kmodule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/classes/drools/rules/age.drl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/classes/spring/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/test-classes/com/caochengyin/DroolsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/test-classes/com/caochengyin/Junit4Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4web/target/test-classes/spring-config-test.xml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/spring4/target/" />
-    <ignored path="$PROJECT_DIR$/spring4web/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,19 +49,6 @@
         <entry key="last-active-plugin-version" value="5.23.0" />
       </map>
     </option>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,14 +98,8 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\JD\repository4maven" />
-        <option name="mavenHome" value="C:/Program Files/maven/apache-maven-3.5.4" />
         <option name="userSettingsFile" value="C:\JD\repository4maven\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -138,6 +145,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
+  <component name="ProjectId" id="21aILLKvBUl5p3r24GrMEalaHeZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -278,17 +286,28 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545916582022" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2229885" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -307,19 +326,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.DroolsTest.t2">
+  <component name="RunManager" selected="JUnit.JunitHelloTest.sayHello">
     <configuration name="DroolsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring4web" />
       <extension name="coverage">
@@ -330,6 +337,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.caochengyin" />
       <option name="MAIN_CLASS_NAME" value="com.caochengyin.DroolsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -382,15 +390,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JunitHelloTest.sayHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="creek-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ciao.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ciao.practice" />
+      <option name="MAIN_CLASS_NAME" value="com.ciao.practice.JunitHelloTest" />
+      <option name="METHOD_NAME" value="sayHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/creek-test/src/main/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JunitHelloTest.sayHello" />
+        <item itemvalue="JUnit.Junit4Test.t1" />
         <item itemvalue="JUnit.DroolsTest.t2" />
         <item itemvalue="JUnit.DroolsTest.t1" />
         <item itemvalue="JUnit.DroolsTest" />
-        <item itemvalue="JUnit.Junit4Test.t1" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -403,6 +439,7 @@
       <updated>1545893098775</updated>
       <workItem from="1545893106557" duration="13600000" />
       <workItem from="1545915398239" duration="1183000" />
+      <workItem from="1638172717271" duration="2652000" />
     </task>
     <servers />
   </component>
@@ -489,7 +526,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,13 +545,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring4web/src/test/java/com/caochengyin/DroolsTest.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring4web/src/test/java/com/caochengyin/DroolsTest.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
