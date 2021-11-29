@@ -4,7 +4,7 @@ author：<a url='https://github.com/ciao-cao-offical'>@ciao-cao-offical</a><br>
 email：[843078365@qq.com](843078365@qq.com)<br>
 
 ### 学习内容：
-> ##### STAGE-1 </br>
+> ##### STEP-1 </br>
 1. junit
 
 > **Java依赖**<br/>
