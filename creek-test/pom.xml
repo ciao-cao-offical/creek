@@ -23,6 +23,11 @@
             <artifactId>hamcrest-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
