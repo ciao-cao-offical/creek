@@ -10,7 +10,9 @@ email：[843078365@qq.com](843078365@qq.com)<br>
 > **Java依赖**<br/>
 1. hamcrest-core（version:2.2）
 2. junit（version:4.13.2）
-3. jol-core（version:0.9）
+3. disruptor（version:3.4.4）
+4. jol-core（version:0.9）
+5. ...
 
 > **Python依赖**<br/>
 1. python标准库（version:3.*）
