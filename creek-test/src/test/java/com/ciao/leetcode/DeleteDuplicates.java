@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/
  */
 public class DeleteDuplicates {
+    public static void main(String[] args) {
+
+    }
+
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
             return null;

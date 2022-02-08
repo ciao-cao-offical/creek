@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/merge-two-binary-trees/
  */
 public class MergeTrees {
+    public static void main(String[] args) {
+
+    }
+
     //深度优先
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if (root1 == null) {

@@ -8,6 +8,10 @@ package com.ciao.leetcode;
  * ☆☆
  */
 public class BackspaceCompare {
+    public static void main(String[] args) {
+
+    }
+
     public boolean backspaceCompare(String s, String t) {
         int i = s.length() - 1, j = t.length() - 1;
         int skipS = 0, skipT = 0;

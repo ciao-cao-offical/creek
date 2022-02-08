@@ -11,6 +11,10 @@ import java.util.List;
  * ★
  */
 public class LetterCasePermutation {
+    public static void main(String[] args) {
+
+    }
+
     public List<String> letterCasePermutation(String s) {
         char[] chars = s.toCharArray();
         List<StringBuilder> sbs = new ArrayList<>();

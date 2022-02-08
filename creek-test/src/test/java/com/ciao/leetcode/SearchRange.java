@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
  */
 public class SearchRange {
+    public static void main(String[] args) {
+
+    }
+
     public int[] searchRange(int[] nums, int target) {
         int leftIdx = binarySearch(nums, target, true);
         int rightIdx = binarySearch(nums, target, false) - 1;

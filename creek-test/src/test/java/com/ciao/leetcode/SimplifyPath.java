@@ -9,6 +9,10 @@ import java.util.ArrayDeque;
  * @description https://leetcode-cn.com/problems/simplify-path/
  */
 public class SimplifyPath {
+    public static void main(String[] args) {
+
+    }
+
     public String simplify(String path) {
         ArrayDeque<String> deque = new ArrayDeque<>();
         String[] split = path.split("/");
@@ -16,14 +20,14 @@ public class SimplifyPath {
             if ("..".equals(s)) {
                 deque.pollLast();
 
-            }else if (s != null && s.length() > 0 && !".".equals(s)){
+            } else if (s != null && s.length() > 0 && !".".equals(s)) {
                 deque.offerLast(s);
             }
         }
 
-        if (deque.isEmpty()){
+        if (deque.isEmpty()) {
             return "/";
-        }else{
+        } else {
             StringBuilder builder = new StringBuilder();
             while (!deque.isEmpty()) {
                 builder.append("/").append(deque.pollFirst());

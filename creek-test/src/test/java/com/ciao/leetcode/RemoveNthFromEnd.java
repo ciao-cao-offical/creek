@@ -7,6 +7,9 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
  */
 public class RemoveNthFromEnd {
+    public static void main(String[] args) {
+
+    }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0, head);

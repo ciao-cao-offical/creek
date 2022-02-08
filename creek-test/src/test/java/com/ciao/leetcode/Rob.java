@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/house-robber/solution/da-jia-jie-she-by-leetcode-solution/
  */
 public class Rob {
+    public static void main(String[] args) {
+
+    }
+
     public int rob(int[] nums) {
         int length = nums.length;
         if (length == 0) {

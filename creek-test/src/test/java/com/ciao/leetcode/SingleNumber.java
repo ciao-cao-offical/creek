@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/single-number/
  */
 public class SingleNumber {
+    public static void main(String[] args) {
+
+    }
+
     public int singleNumber(int[] nums) {
         int s = 0;
         for (int num : nums) {

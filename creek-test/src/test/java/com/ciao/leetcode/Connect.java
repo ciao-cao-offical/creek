@@ -9,6 +9,10 @@ import java.util.LinkedList;
  * @description https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/
  */
 public class Connect {
+    public static void main(String[] args) {
+
+    }
+
     public Node connect(Node root) {
         if (root == null) {
             return null;

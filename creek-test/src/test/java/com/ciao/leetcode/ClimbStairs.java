@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/climbing-stairs/
  */
 public class ClimbStairs {
+    public static void main(String[] args) {
+
+    }
+    
     // 滚动数组
     public int climbStairs(int n) {
         if (n == 1) {

@@ -8,6 +8,10 @@ package com.ciao.leetcode;
  * ★
  */
 public class CheckInclusion {
+    public static void main(String[] args) {
+
+    }
+
     public boolean checkInclusion(String s1, String s2) {
         int n = s1.length(), m = s2.length();
         if (n > m) {

@@ -10,6 +10,10 @@ public class MaxAreaOfIsland {
     private static final int[] dx = new int[]{1, 0, -1, 0};
     private static final int[] dy = new int[]{0, 1, 0, -1};
 
+    public static void main(String[] args) {
+
+    }
+
     public int maxAreaOfIsland(int[][] grid) {
         if (grid == null) {
             return 0;

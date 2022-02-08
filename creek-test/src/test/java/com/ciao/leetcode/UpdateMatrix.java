@@ -13,6 +13,10 @@ import java.util.Queue;
 public class UpdateMatrix {
     static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
+    public static void main(String[] args) {
+
+    }
+
     public int[][] updateMatrix(int[][] mat) {
         int m = mat.length, n = mat[0].length;
         int[][] dist = new int[m][n];

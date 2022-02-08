@@ -12,6 +12,10 @@ import java.util.Arrays;
 public class HighestPeak {
     int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
+    public static void main(String[] args) {
+
+    }
+
     //多远广度优先算法
     public int[][] highestPeak(int[][] isWater) {
         int m = isWater.length;

@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/longest-nice-substring/
  */
 public class LongestNiceSubstring {
+    public static void main(String[] args) {
+
+    }
+
     public String longestNiceSubstring(String s) {
         int n = s.length();
         int maxPos = 0;

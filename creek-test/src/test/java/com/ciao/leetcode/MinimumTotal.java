@@ -10,6 +10,10 @@ import java.util.List;
  * ★★★
  */
 public class MinimumTotal {
+    public static void main(String[] args) {
+
+    }
+
     public int minimumTotal(List<List<Integer>> triangle) {
         int n = triangle.size();
         int[][] f = new int[n][n];

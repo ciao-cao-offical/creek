@@ -7,6 +7,10 @@ package com.ciao.leetcode;
  * @description https://leetcode-cn.com/problems/middle-of-the-linked-list/
  */
 public class MiddleNode {
+    public static void main(String[] args) {
+
+    }
+
     public ListNode middleNode(ListNode head) {
         ListNode fast = head, slow = head;
         while (fast != null && fast.next != null) {
