@@ -4,7 +4,7 @@ package com.ciao.practice;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2022/2/9
- * @description 当前类の简要描述
+ * @description 类
  */
 public class Clazz {
     private String pro;
