@@ -11,8 +11,11 @@ interface VersionControl {
  * @description https://leetcode-cn.com/problems/first-bad-version/
  */
 public class BadVersion implements VersionControl {
-
     private static final Integer badVersion = 4;
+
+    public static void main(String[] args) {
+
+    }
 
     @Override
     public int firstBadVersion(int n) {
