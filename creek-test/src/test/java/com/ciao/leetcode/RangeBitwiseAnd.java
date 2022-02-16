@@ -1,7 +1,24 @@
-package com.ciao.leetcode;/**
+package com.ciao.leetcode;
+
+/**
  * @author caochengyin
  * @version v 1.0.0
  * @date 2022/2/16
- * @description 当前类の简要描述
- */public class RangeBitwiseAnd {
+ * @description https://leetcode-cn.com/problems/bitwise-and-of-numbers-range/
+ * ★★
+ */
+public class RangeBitwiseAnd {
+    public static void main(String[] args) {
+        System.out.println(new RangeBitwiseAnd().rangeBitwiseAnd(5, 7));
+    }
+
+    public int rangeBitwiseAnd(int left, int right) {
+        int shift = 0;
+        while (left < right) {
+            left >>= 1;
+            right >>= 1;
+            ++shift;
+        }
+        return right << shift;
+    }
 }
