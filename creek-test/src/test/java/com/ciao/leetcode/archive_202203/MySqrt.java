@@ -20,7 +20,7 @@ public class MySqrt {
         int left = 0;
         int right = x;
         int ans = -1;
-        while (left < right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
             long squ = (long) mid * mid;
             if (squ <= x) {
