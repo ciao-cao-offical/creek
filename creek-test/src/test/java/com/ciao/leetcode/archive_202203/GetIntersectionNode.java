@@ -1,7 +1,5 @@
 package com.ciao.leetcode.archive_202203;
 
-import java.util.HashSet;
-
 /**
  * @author caochengyin
  * @version v 1.0.0
@@ -14,7 +12,23 @@ public class GetIntersectionNode {
 
     }
 
+    //双指针
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) {
+            return null;
+        }
+        ListNode pa = headA;
+        ListNode pb = headB;
+        while (pa != pb) {
+            pa = pa == null ? headB : pa.next;
+            pb = pb == null ? headA : pb.next;
+        }
+
+        return pa;
+    }
+
+    //哈希集合
+    /*public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         HashSet<ListNode> visited = new HashSet<>();
         ListNode temp = headA;
         while (temp != null) {
@@ -30,7 +44,7 @@ public class GetIntersectionNode {
             temp = temp.next;
         }
         return null;
-    }
+    }*/
 
     public class ListNode {
         int val;
