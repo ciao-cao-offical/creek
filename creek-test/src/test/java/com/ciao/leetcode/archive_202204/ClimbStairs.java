@@ -20,7 +20,26 @@ public class ClimbStairs {
         System.out.println(new ClimbStairs().climbStairs(3));
     }
 
+    //滚动数组
     public int climbStairs(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        if (n == 2) {
+            return 2;
+        }
+
+        int p = 0;
+        int q = 0;
+        int r = 1;
+        for (int i = 0; i < n; i++) {
+            p = q;
+            q = r;
+            r = p + q;
+        }
+        return r;
+    }
+    /*public int climbStairs(int n) {
         Integer way = map.get(n);
         if (way != null) {
             return way;
@@ -30,6 +49,6 @@ public class ClimbStairs {
         map.put(n, way);
 
         return way;
-    }
+    }*/
 }
 
