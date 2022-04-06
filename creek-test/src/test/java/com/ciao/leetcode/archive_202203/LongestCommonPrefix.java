@@ -13,6 +13,7 @@ public class LongestCommonPrefix {
         System.out.println(new LongestCommonPrefix().longestCommonPrefix(strs));
     }
 
+    //纵向扫描
     public String longestCommonPrefix(String[] strs) {
         if (strs == null) {
             return null;
