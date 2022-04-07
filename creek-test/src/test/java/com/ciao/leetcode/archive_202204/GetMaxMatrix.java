@@ -19,44 +19,61 @@ public class GetMaxMatrix {
         System.out.println(Arrays.toString(new GetMaxMatrix().getMaxMatrix(matrix)));
     }
 
+    //降维 将多行列拍扁，二维降维成为一维
+    //思路来源：
+    // https://leetcode-cn.com/problems/max-submatrix-lcci/solution/zhe-yao-cong-zui-da-zi-xu-he-shuo-qi-you-jian-dao-/
     public int[] getMaxMatrix(int[][] matrix) {
-        int[] ans = new int[4];//保存最大子矩阵的左上角和右下角的行列坐标
-        int N = matrix.length;
-        int M = matrix[0].length;
-        int[] b = new int[M];//记录当前i~j行组成大矩阵的每一列的和，将二维转化为一维
-        int sum = 0;//相当于dp[i],dp_i
-        int maxsum = Integer.MIN_VALUE;//记录最大值
-        int bestr1 = 0;
-        int bestc1 = 0;//暂时记录左上角，相当于begin
-
-        for (int i = 0; i < N; i++) {     //以i为上边，从上而下扫描
-            for (int t = 0; t < M; t++) {
-                b[t] = 0;    //每次更换子矩形上边，就要清空b，重新计算每列的和
+        //行
+        int m = matrix.length;
+        //列
+        int n = matrix[0].length;
+        //最大矩阵和
+        int maxSum = Integer.MIN_VALUE;
+        //备选矩阵左上角坐标
+        int cr1 = 0;
+        int cc1 = 0;
+        //最终答案左上+右下坐标
+        int[] ans = new int[4];
+        //当前列的和
+        int[] b = new int[n];
+        //按照行 自上而下扫描
+        for (int i = 0; i < m; i++) {
+            //最上层行变化以后，需清空b，重新计算
+            for (int j = 0; j < n; j++) {
+                b[j] = 0;
             }
-            for (int j = i; j < N; j++) {    //子矩阵的下边，从i到N-1，不断增加子矩阵的高
-                //一下就相当于求一次最大子序列和
-                sum = 0;//从头开始求dp
-                for (int k = 0; k < M; k++) {
+
+            //从最上层行开始，依次遍历每一种矩阵组合<矩阵上边界不变，从上向下，从左向右，向外拓展>
+            for (int j = i; j < m; j++) {
+                //步骤矩阵和
+                int stepSum = 0;
+                for (int k = 0; k < n; k++) {
                     b[k] += matrix[j][k];
-                    //我们只是不断增加其高，也就是下移矩阵下边，所有这个矩阵每列的和只需要加上新加的哪一行的元素
-                    //因为我们求dp[i]的时候只需要dp[i-1]和nums[i],所有在我们不断更新b数组时就可以求出当前位置的dp_i
-                    if (sum > 0) {
-                        sum += b[k];
+                    //当stepSum大于0时，加上至当前坐标值
+                    if (stepSum > 0) {
+                        stepSum += b[k];
+
                     } else {
-                        sum = b[k];
-                        bestr1 = i;//自立门户，暂时保存其左上角
-                        bestc1 = k;
+                        //当stepSum小于等于0时，加上当前坐标值只会让矩阵和与当前坐标值相比相等或更小，
+                        // 不如另起起点（左上角）
+                        stepSum = b[k];
+                        //临时保存新左上角坐标
+                        cr1 = i;
+                        cc1 = k;
                     }
-                    if (sum > maxsum) {
-                        maxsum = sum;
-                        ans[0] = bestr1;//更新答案
-                        ans[1] = bestc1;
+
+                    //若当前步骤矩阵和大于当前最大矩阵和，则更新结果
+                    if (stepSum > maxSum) {
+                        maxSum = stepSum;
+                        ans[0] = cr1;
+                        ans[1] = cc1;
                         ans[2] = j;
                         ans[3] = k;
                     }
                 }
             }
         }
+
         return ans;
     }
 }
