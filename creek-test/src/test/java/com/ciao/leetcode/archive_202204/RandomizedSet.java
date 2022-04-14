@@ -1,8 +1,6 @@
 package com.ciao.leetcode.archive_202204;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 /**
  * @author caochengyin
@@ -16,7 +14,8 @@ public class RandomizedSet {
     private Random random = new Random();
 
     public RandomizedSet() {
-
+        map = new HashMap<>();
+        list = new ArrayList<>();
     }
 
     public static void main(String[] args) {
@@ -24,14 +23,38 @@ public class RandomizedSet {
     }
 
     public boolean insert(int val) {
-        return false;
+        if (map.containsKey(val)) {
+            return false;
+
+        } else {
+            int size = list.size();
+            map.put(val, size);
+            list.add(val);
+            return true;
+        }
     }
 
     public boolean remove(int val) {
-        return false;
+        if (!map.containsKey(val)) {
+            return false;
+        }
+
+        int index = map.get(val);
+        int last_index = list.size() - 1;
+        if (index == last_index) {
+            map.remove(val);
+
+        } else {
+            Integer last = list.get(last_index);
+            map.put(last, index);
+            map.remove(val);
+            list.set(index, last);
+        }
+        list.remove(last_index);
+        return true;
     }
 
     public int getRandom() {
-        return 0;
+        return list.get(random.nextInt(list.size()));
     }
 }
