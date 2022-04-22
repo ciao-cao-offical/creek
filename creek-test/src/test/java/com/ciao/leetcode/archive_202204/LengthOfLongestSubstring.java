@@ -15,6 +15,7 @@ public class LengthOfLongestSubstring {
         System.out.println(new LengthOfLongestSubstring().lengthOfLongestSubstring(s));
     }
 
+    //滑动窗口
     public int lengthOfLongestSubstring(String s) {
         int len = s.length();
         if (len == 0) {
