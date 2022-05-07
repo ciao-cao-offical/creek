@@ -8,6 +8,7 @@ import java.util.Deque;
  * @version v 1.0.0
  * @date 2022/5/6 0006
  * @description https://leetcode-cn.com/problems/number-of-recent-calls/
+ * 试试【线段树（动态开点）】-【宫水三叶】
  */
 public class RecentCounter {
     public static void main(String[] args) {
