@@ -17,4 +17,12 @@ public class StringTest {
             System.out.printf("【%d】==>【%c】", i, chars[i]);
         }
     }
+
+    @Test
+    public void 测试startsWith方法() {
+        String test_str = "001";
+        System.out.println(test_str.startsWith("01", 1));
+        System.out.println(test_str.startsWith("01", 2));
+        System.out.println(test_str.startsWith("01", 3));
+    }
 }
