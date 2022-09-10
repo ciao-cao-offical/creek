@@ -5,6 +5,7 @@ package com.ciao.leetcode.archive_202209;
  * @version v 1.0.0
  * @date 2022/9/10
  * @description https://leetcode.cn/problems/trim-a-binary-search-tree/
+ * 试试【迭代】
  */
 public class TrimBST {
     public static void main(String[] args) {
