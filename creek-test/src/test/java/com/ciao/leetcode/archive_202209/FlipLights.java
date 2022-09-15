@@ -10,13 +10,14 @@ import java.util.Set;
  * @date 2022/9/15
  * @description https://leetcode.cn/problems/bulb-switcher-ii/
  * ⭐️⭐️⭐️ b2t
+ * 试试【宫水三叶】：https://leetcode.cn/problems/bulb-switcher-ii/solution/by-ac_oier-3ttx/
  */
 public class FlipLights {
     public static void main(String[] args) {
         System.out.println(new FlipLights().flipLights(2, 1));
     }
 
-    //降低【降低搜索空间】
+    //降低【降低搜索空间】有点复杂，没太看懂 😂
     public int flipLights(int n, int presses) {
         Set<Integer> seen = new HashSet<Integer>();
         for (int i = 0; i < 1 << 4; i++) {
