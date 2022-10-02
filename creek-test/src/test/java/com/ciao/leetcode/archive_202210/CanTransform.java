@@ -12,7 +12,7 @@ public class CanTransform {
         System.out.println(new CanTransform().canTransform(start, end));
     }
 
-    //
+    //【双指针】(๑•̀ㅂ•́)و✧ 参考自：https://leetcode.cn/problems/swap-adjacent-in-lr-string/solution/by-ac_oier-ye71/
     public boolean canTransform(String start, String end) {
         int n = start.length(), i = 0, j = 0;
         while (i < n || j < n) {
