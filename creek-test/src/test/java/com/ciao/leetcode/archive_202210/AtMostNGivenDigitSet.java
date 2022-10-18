@@ -4,7 +4,7 @@ package com.ciao.leetcode.archive_202210;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2022/10/18 0018
- * @description 简要描述当前类の作用
+ * @description https://leetcode.cn/problems/numbers-at-most-n-given-digit-set/
  */
 public class AtMostNGivenDigitSet {
     public static void main(String[] args) {
