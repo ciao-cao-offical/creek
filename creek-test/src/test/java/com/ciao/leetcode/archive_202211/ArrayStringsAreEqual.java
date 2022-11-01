@@ -5,6 +5,7 @@ package com.ciao.leetcode.archive_202211;
  * @version v 1.0.0
  * @date 2022/11/1 0001
  * @description https://leetcode.cn/problems/check-if-two-string-arrays-are-equivalent/
+ * 双十一开门红，顺利完成任务，加油加油💪，happy happy！
  */
 public class ArrayStringsAreEqual {
     public static void main(String[] args) {
