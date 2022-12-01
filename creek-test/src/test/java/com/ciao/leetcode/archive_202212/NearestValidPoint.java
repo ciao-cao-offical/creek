@@ -1,4 +1,4 @@
-package com.ciao.leetcode.archive_202211;
+package com.ciao.leetcode.archive_202212;
 
 /**
  * @author caochengyin
@@ -21,7 +21,7 @@ public class NearestValidPoint {
             int[] point = points[i];
             if (point[0] == x || point[1] == y) {
                 int thisMd = Math.abs(x - point[0]) + Math.abs(y - point[1]);
-                
+
                 if (md > thisMd) {
                     idx = i;
                     md = thisMd;
