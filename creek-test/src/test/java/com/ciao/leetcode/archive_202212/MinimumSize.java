@@ -13,6 +13,7 @@ public class MinimumSize {
 
     }
 
+    //Cvd, fuck you, Omicron!
     public int minimumSize(int[] nums, int maxOperations) {
         int left = 1, right = Arrays.stream(nums).max().getAsInt();
         int ans = 0;
