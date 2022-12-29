@@ -16,6 +16,7 @@ public class TwoOutOfThree {
 
     }
 
+    //md，讲爱情故事去了，差点错过提交时间，cvd，下不为例
     public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i : nums1) {
