@@ -1,5 +1,6 @@
 package com.ciao.practice;
 
+import com.ciao.practice.parent.Parent;
 import org.junit.Test;
 
 /**
@@ -14,8 +15,16 @@ public class ClassInitTest {
         Children children = new Children();
         children.setFastName("布鲁斯");
         children.setLastName("韦恩");
+        Integer countryCode = children.getCountryCode();
         System.out.println(children instanceof Children);
         System.out.println(children instanceof Parent);
+
+        Children children_1 = new Children();
+        children_1.setFastName("克拉克");
+        children_1.setLastName("肯特");
+        Integer countryCode_1 = children_1.getCountryCode();
+        System.out.println(children_1 instanceof Children);
+        System.out.println(children_1 instanceof Parent);
 
     }
 

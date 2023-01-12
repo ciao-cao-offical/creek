@@ -1,4 +1,4 @@
-package com.ciao.practice;
+package com.ciao.practice.parent;
 
 /**
  * @author caochengyin
@@ -7,6 +7,7 @@ package com.ciao.practice;
  * @description 父类
  */
 public class Parent {
+    private static final Integer countryCode = 10;
     private String lastName;
 
     public Parent() {
@@ -20,5 +21,9 @@ public class Parent {
     public Parent setLastName(String lastName) {
         this.lastName = lastName;
         return this;
+    }
+
+    public Integer getCountryCode() {
+        return countryCode;
     }
 }
