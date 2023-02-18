@@ -7,7 +7,7 @@ import java.util.List;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2023/2/18 0018 15:05:20
- * @description 简要描述当前类の作用
+ * @description https://leetcode.cn/problems/find-positive-integer-solution-for-a-given-equation/description/
  */
 public class FindSolution {
     public static void main(String[] args) {
