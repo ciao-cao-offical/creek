@@ -1,4 +1,4 @@
-package jvm.jdk8;
+package jvm.jdk8.oom;
 
 /**
  * @author caochengyin
