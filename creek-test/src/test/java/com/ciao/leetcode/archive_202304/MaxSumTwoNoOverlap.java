@@ -5,6 +5,7 @@ package com.ciao.leetcode.archive_202304;
  * @version v 1.0.0
  * @date 2023/4/26 0026 22:27:48
  * @description https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays/
+ * ★★★ cvd，练一下PPT，最后一天了，加油！(ง •_•)ง
  */
 public class MaxSumTwoNoOverlap {
     public static void main(String[] args) {
