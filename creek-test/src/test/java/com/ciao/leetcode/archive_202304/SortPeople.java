@@ -8,7 +8,7 @@ import java.util.Map;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2023/4/25 0025 23:36:45
- * @description 简要描述当前类の作用
+ * @description https://leetcode.cn/problems/sort-the-people/
  */
 public class SortPeople {
     public static void main(String[] args) {
