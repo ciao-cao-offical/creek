@@ -4,7 +4,7 @@ package com.ciao.leetcode.archive_202304;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2023/4/30 0030 23:04:18
- * @description 简要描述当前类の作用
+ * @description https://leetcode.cn/problems/moving-stones-until-consecutive/description/
  */
 public class NumMovesStones {
     public static void main(String[] args) {
