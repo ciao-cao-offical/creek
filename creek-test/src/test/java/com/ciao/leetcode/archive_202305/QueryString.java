@@ -5,6 +5,7 @@ package com.ciao.leetcode.archive_202305;
  * @version v 1.0.0
  * @date 2023/5/11 15:39
  * @description https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/
+ * 灵神的这个答案的时间复杂度算法没看懂，标记一下：https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/solutions/2265097/san-chong-suan-fa-cong-bao-li-dao-you-hu-nmtq/
  */
 public class QueryString {
     public static void main(String[] args) {
