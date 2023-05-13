@@ -4,7 +4,7 @@ package com.ciao.leetcode.archive_202305;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2023/5/7 0007 12:41:42
- * @description 简要描述当前类の作用
+ * @description https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/
  */
 public class NumPairsDivisibleBy60 {
     public static void main(String[] args) {
