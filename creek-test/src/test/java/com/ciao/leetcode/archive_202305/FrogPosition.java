@@ -8,6 +8,7 @@ import java.util.List;
  * @version v 1.0.0
  * @date 2023/5/24 0024 22:57:28
  * @description https://leetcode.cn/problems/frog-position-after-t-seconds/
+ * ★★★★★ cvd
  */
 public class FrogPosition {
     public static void main(String[] args) {
