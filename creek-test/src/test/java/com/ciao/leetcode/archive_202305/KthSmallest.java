@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
  * @version v 1.0.0
  * @date 2023/5/28 0028 17:44:54
  * @description https://leetcode.cn/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/
- * cvd，★★★★★
+ * cvd，★★★★★，let's DOTA2!
  */
 public class KthSmallest {
     public static void main(String[] args) {
