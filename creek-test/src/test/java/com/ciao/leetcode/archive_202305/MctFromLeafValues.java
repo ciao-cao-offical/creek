@@ -7,6 +7,7 @@ import java.util.Arrays;
  * @version v 1.0.0
  * @date 2023/5/31 0031 01:24:42
  * @description https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/
+ * cvd，今天20:00是京东双十一开门红，要加班到凌晨了，提前提交一下，以防忘记！！！
  */
 public class MctFromLeafValues {
     public static void main(String[] args) {
