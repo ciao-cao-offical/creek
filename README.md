@@ -20,7 +20,7 @@
 2. junit（version:4.13.2）
 3. disruptor（version:3.4.4）
 4. jol-core（version:0.9）
-5. guava（version:31.1-jre）
+5. guava（version:32.1.1-jre）
 6. ..
 
 > **Python依赖**<br/>
