@@ -11,6 +11,6 @@ import com.ciao.api.Animal;
 public class Mouse implements Animal {
     @Override
     public String sing() {
-        return "zhi zhi!";
+        return "🐀：zhi zhi!";
     }
 }

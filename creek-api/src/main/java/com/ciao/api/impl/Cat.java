@@ -11,6 +11,6 @@ import com.ciao.api.Animal;
 public class Cat implements Animal {
     @Override
     public String sing() {
-        return "miao miao!";
+        return "🐱：miao miao!";
     }
 }
