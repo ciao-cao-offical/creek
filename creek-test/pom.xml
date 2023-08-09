@@ -54,6 +54,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.ciao</groupId>
+            <artifactId>creek-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>
