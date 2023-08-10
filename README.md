@@ -10,6 +10,7 @@
 
 1. javassist
 2. spi
+3. log4j2
 
 > ##### 👣 STEP-2 👣 </br>
 
@@ -28,6 +29,7 @@
 5. guava(32.1.1-jre)
 6. javassist(3.29.2-GA)
 7. lombok(1.18.28)
+8. log4j(2.20.0)
 
 > **Python依赖**<br/>
 
