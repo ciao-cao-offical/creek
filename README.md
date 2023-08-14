@@ -6,6 +6,10 @@
 
 ### 学习内容：
 
+> ##### 👣 STEP-4 👣 </br>
+
+1. design pattern
+
 > ##### 👣 STEP-3 👣 </br>
 
 1. javassist

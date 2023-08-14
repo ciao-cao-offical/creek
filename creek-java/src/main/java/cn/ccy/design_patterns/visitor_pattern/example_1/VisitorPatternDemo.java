@@ -1,8 +1,8 @@
-package cn.ccy.design_patterns.visiter_pattern.example_1;
+package cn.ccy.design_patterns.visitor_pattern.example_1;
 
-import cn.ccy.design_patterns.visiter_pattern.example_1.api.impl.Computer;
-import cn.ccy.design_patterns.visiter_pattern.example_1.api.impl.ComputerPartDisplayVisitor_1;
-import cn.ccy.design_patterns.visiter_pattern.example_1.api.impl.ComputerPartDisplayVisitor_2;
+import cn.ccy.design_patterns.visitor_pattern.example_1.api.impl.Computer;
+import cn.ccy.design_patterns.visitor_pattern.example_1.api.impl.ComputerPartDisplayVisitor_1;
+import cn.ccy.design_patterns.visitor_pattern.example_1.api.impl.ComputerPartDisplayVisitor_2;
 import lombok.extern.log4j.Log4j2;
 
 /**

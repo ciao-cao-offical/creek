@@ -1,4 +1,4 @@
-package cn.ccy.design_patterns.visiter_pattern.example_1.api;
+package cn.ccy.design_patterns.visitor_pattern.example_1.api;
 
 /**
  * @author caochengyin
