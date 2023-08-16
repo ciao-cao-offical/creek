@@ -5,6 +5,7 @@ package cn.ccy.leetcode.archive_202308;
  * @version v 1.0.0
  * @date 2023/8/17 0017 00:39:47
  * @description https://leetcode.cn/problems/number-of-ways-of-cutting-a-pizza/
+ * ☆☆☆☆☆ cvd
  */
 public class Ways {
     public static void main(String[] args) {
