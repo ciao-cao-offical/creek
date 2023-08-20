@@ -9,6 +9,7 @@
 > ##### 👣 STEP-4 👣 </br>
 
 1. design pattern
+2. asm
 
 > ##### 👣 STEP-3 👣 </br>
 
@@ -34,6 +35,7 @@
 6. javassist(3.29.2-GA)
 7. lombok(1.18.28)
 8. log4j(2.20.0)
+9. asm(5.2)
 
 > **Python依赖**<br/>
 
