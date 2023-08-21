@@ -1,6 +1,7 @@
 package cn.ccy.asm;
 
-import org.objectweb.asm.ClassVisitor;
+import lombok.extern.log4j.Log4j2;
+import org.objectweb.asm.*;
 
 /**
  * @author caochengyin
@@ -8,12 +9,46 @@ import org.objectweb.asm.ClassVisitor;
  * @date 2023/8/21 0021 00:33:20
  * @description 类打印机
  */
+@Log4j2
 public class ClassPrinter extends ClassVisitor {
+    public ClassPrinter(){
+        super(Opcodes.ASM5);
+    }
+
     public ClassPrinter(int api) {
         super(api);
     }
 
     public ClassPrinter(int api, ClassVisitor cv) {
         super(api, cv);
+    }
+
+    @Override
+    public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
+        log.info("Class Name: {}",name);
+    }
+
+    @Override
+    public AnnotationVisitor visitAnnotation(String desc, boolean visible) {
+        log.info("Annotation: {}",desc);
+        return null;
+    }
+
+    @Override
+    public FieldVisitor visitField(int access, String name, String desc, String signature, Object value) {
+        log.info("Field: {}/{}",name,desc);
+        return null;
+    }
+
+    @Override
+    public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
+        log.info("Method: {}/{}",name,desc);
+        return null;
+    }
+
+    @Override
+    public void visitEnd() {
+        log.info("Visit End.");
+        super.visitEnd();
     }
 }

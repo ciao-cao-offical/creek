@@ -1,5 +1,6 @@
 package cn.ccy.asm.testobject;
 
+import cn.ccy.annotation.TestObject;
 import lombok.extern.log4j.Log4j2;
 
 /**
@@ -9,6 +10,7 @@ import lombok.extern.log4j.Log4j2;
  * @description ASM测试对象
  */
 @Log4j2
+@TestObject
 public class AsmTestObject {
     private final String name = "Asm Test Object";
 
