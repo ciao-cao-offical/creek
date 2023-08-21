@@ -1,6 +1,5 @@
 package cn.ccy.asm;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 import org.objectweb.asm.ClassReader;
 
@@ -19,5 +18,4 @@ public class ClassPrinterTest {
         ClassReader cr = new ClassReader("cn.ccy.asm.testobject.AsmTestObject");
         cr.accept(new ClassPrinter(),0);
     }
-
 }
