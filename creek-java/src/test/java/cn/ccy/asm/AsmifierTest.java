@@ -2,6 +2,7 @@ package cn.ccy.asm;
 
 import org.junit.Test;
 import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.util.ASMifier;
 import org.objectweb.asm.util.TraceClassVisitor;
 
@@ -31,4 +32,11 @@ public class AsmifierTest {
         Files.write(new File(System.getProperty("user.dir") + "/target/dumpTest.class").toPath(), dump);
     }
 
+    @Test
+    public void 测试TraceClassVisitor() throws IOException {
+        ClassReader cr = new ClassReader("cn.ccy.asm.testobject.AsmTestObject");
+        ClassWriter cw = new ClassWriter(cr, 0);
+        TraceClassVisitor tv = new TraceClassVisitor(cw, new PrintWriter(System.out));
+        cr.accept(tv, 0);
+    }
 }

@@ -24,6 +24,7 @@ public class AsmTestObject {
     }
 
     public void giveMeYourName(String yourName) {
+        String str = "localVariable";
         log.info("giveMeYourName ==> Your name is {} and my name is {}", yourName, name);
     }
 }
