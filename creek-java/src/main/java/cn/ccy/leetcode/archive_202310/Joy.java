@@ -8,7 +8,15 @@ package cn.ccy.leetcode.archive_202310;
  */
 public class Joy {
     public static void main(String[] args) {
-        // 打印输出"Hello 1023!"
-        System.out.println("Hello 1023!");
+        System.out.println("Hello 1024!");
+
+        System.out.println("客户为先");
+        System.out.println("诚信");
+        System.out.println("协作");
+        System.out.println("感恩");
+        System.out.println("拼搏");
+        System.out.println("担当");
+
+        System.out.println("2023.11.11 大卖！");
     }
 }
