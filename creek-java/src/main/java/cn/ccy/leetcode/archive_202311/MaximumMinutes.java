@@ -55,7 +55,8 @@ public class MaximumMinutes {
         // 人的 BFS
         boolean[][] vis = new boolean[m][n];
         vis[0][0] = true;
-        List<int[]> q = List.of(new int[]{0, 0});
+        List<int[]> q = new ArrayList<>();
+        q.add(new int[]{0, 0});
         while (!q.isEmpty()) {
             List<int[]> tmp = q;
             q = new ArrayList<>();
