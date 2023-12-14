@@ -6,6 +6,10 @@
 
 ### 学习内容：
 
+> ##### 👣 STEP-5 👣 </br>
+
+1. hutool
+
 > ##### 👣 STEP-4 👣 </br>
 
 1. design pattern
@@ -36,6 +40,7 @@
 7. lombok(1.18.28)
 8. log4j(2.20.0)
 9. asm(5.2)
+10. hutool(5.8.23)
 
 > **Python依赖**<br/>
 
