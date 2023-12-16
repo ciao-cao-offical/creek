@@ -9,6 +9,7 @@
 > ##### 👣 STEP-5 👣 </br>
 
 1. hutool
+2. TinyPinyin
 
 > ##### 👣 STEP-4 👣 </br>
 
@@ -41,6 +42,7 @@
 8. log4j(2.20.0)
 9. asm(5.2)
 10. hutool(5.8.23)
+11. TinyPinyin(2.0.3.RELEASE)
 
 > **Python依赖**<br/>
 
