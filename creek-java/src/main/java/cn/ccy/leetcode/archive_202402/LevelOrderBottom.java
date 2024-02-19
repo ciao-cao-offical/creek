@@ -8,39 +8,38 @@ import java.util.Queue;
 /**
  * @author caochengyin
  * @version v 1.0.0
- * @date 2024/2/14 21:06
- * @description https://leetcode.cn/problems/binary-tree-level-order-traversal/?envType=daily-question&envId=2024-02-14
+ * @date 2024/2/15 21:25
+ * @description https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/?envType=daily-question&envId=2024-02-15
  */
-public class LevelOrder {
+public class LevelOrderBottom {
     public static void main(String[] args) {
 
     }
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> ret = new ArrayList<List<Integer>>();
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        List<List<Integer>> levelOrder = new LinkedList<List<Integer>>();
         if (root == null) {
-            return ret;
+            return levelOrder;
         }
-
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
         while (!queue.isEmpty()) {
             List<Integer> level = new ArrayList<Integer>();
-            int currentLevelSize = queue.size();
-            for (int i = 1; i <= currentLevelSize; ++i) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
                 level.add(node.val);
-                if (node.left != null) {
-                    queue.offer(node.left);
+                TreeNode left = node.left, right = node.right;
+                if (left != null) {
+                    queue.offer(left);
                 }
-                if (node.right != null) {
-                    queue.offer(node.right);
+                if (right != null) {
+                    queue.offer(right);
                 }
             }
-            ret.add(level);
+            levelOrder.add(0, level);
         }
-
-        return ret;
+        return levelOrder;
     }
 
     public class TreeNode {
