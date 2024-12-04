@@ -4,7 +4,7 @@ package cn.ccy.leetcode.archive_202412;
  * @author caochengyin
  * @version v 1.0.0
  * @date 2024/12/5 00:31:29
- * @description 简要描述当前类の作用
+ * @description https://leetcode.cn/problems/minimum-moves-to-capture-the-queen/submissions/585098440/?envType=daily-question&envId=2024-12-05
  */
 public class MinMovesToCaptureTheQueen {
     public static void main(String[] args) {
