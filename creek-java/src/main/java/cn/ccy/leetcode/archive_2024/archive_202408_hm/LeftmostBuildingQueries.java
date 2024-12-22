@@ -1,0 +1,73 @@
+package cn.ccy.leetcode.archive_2024.archive_202408_hm;
+
+/**
+ * @author caochengyin
+ * @version v 1.0.0
+ * @date 2024/8/10 01:36
+ * @description https://leetcode.cn/problems/find-building-where-alice-and-bob-can-meet/?envType=daily-question&envId=2024-08-10
+ * ⭐️⭐️⭐️⭐️⭐️ 2024cvd
+ */
+public class LeftmostBuildingQueries {
+    public static void main(String[] args) {
+
+    }
+
+    int[] zd;
+
+    public int[] leftmostBuildingQueries(int[] heights, int[][] queries) {
+        int n = heights.length;
+        zd = new int[n * 4];
+        build(1, n, 1, heights);
+
+        int m = queries.length;
+        int[] ans = new int[m];
+        for (int i = 0; i < m; i++) {
+            int a = queries[i][0];
+            int b = queries[i][1];
+            if (a > b) {
+                int temp = a;
+                a = b;
+                b = temp;
+            }
+
+            if (a == b || heights[a] < heights[b]) {
+                ans[i] = b;
+                continue;
+            }
+
+            ans[i] = query(b + 1, heights[a], 1, n, 1) - 1;
+        }
+        return ans;
+    }
+
+    public void build(int l, int r, int rt, int[] heights) {
+        if (l == r) {
+            zd[rt] = heights[l - 1];
+            return;
+        }
+
+        int mid = (l + r) >> 1;
+        build(l, mid, rt << 1, heights);
+        build(mid + 1, r, rt << 1 | 1, heights);
+        zd[rt] = Math.max(zd[rt << 1], zd[rt << 1 | 1]);
+    }
+
+    public int query(int pos, int val, int l, int r, int rt) {
+        if (val >= zd[rt]) {
+            return 0;
+        }
+
+        if (l == r) {
+            return l;
+        }
+
+        int mid = (l + r) >> 1;
+        if (pos <= mid) {
+            int res = query(pos, val, l, mid, rt << 1);
+            if (res != 0) {
+                return res;
+            }
+        }
+        return query(pos, val, mid + 1, r, rt << 1 | 1);
+    }
+}
