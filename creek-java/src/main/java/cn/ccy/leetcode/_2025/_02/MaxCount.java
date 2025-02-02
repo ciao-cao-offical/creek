@@ -9,7 +9,7 @@ package cn.ccy.leetcode._2025._02;
 
 public class MaxCount {
     public static void main(String[] args) {
-        System.out.println();
+        
     }
 
     public int maxCount(int m, int n, int[][] ops) {
