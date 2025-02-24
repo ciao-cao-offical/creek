@@ -11,6 +11,10 @@ import java.util.Random;
  * ☆☆☆☆☆ 2025cvd
  */
 public class Skiplist {
+    public static void main(String[] args) {
+
+    }
+
     static final int MAX_LEVEL = 32;
     static final double P_FACTOR = 0.25;
     private SkiplistNode head;
