@@ -5,6 +5,7 @@ package cn.ccy.leetcode._2025._04;
  * @version v 1.0.0
  * @see <a href="https://leetcode.cn/problems/count-subarrays-with-fixed-bounds/?envType=daily-question&envId=2025-04-26">2444. 统计定界子数组的数目</a>
  * @since 2025/4/26 22:43
+ * ★★★★★ 2025cvd
  */
 public class CountSubarrays {
     public static void main(String[] args) {
