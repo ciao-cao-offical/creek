@@ -1,4 +1,4 @@
-package cn.ccy.leetcode._2025._04;
+package cn.ccy.leetcode._2025._05;
 
 import java.util.Arrays;
 import java.util.TreeMap;
