@@ -25,10 +25,13 @@ public class DivideString {
             curr += k;
         }
         // 尝试填充最后一组
-        String last = res.get(res.size() - 1);
+        StringBuilder last = new StringBuilder(res.get(res.size() - 1));
         if (last.length() < k) {
-            last += String.valueOf(fill).repeat(k - last.length());
-            res.set(res.size() - 1, last);
+            for (int i = 0; i < k - last.length(); i++) {
+                last.append(fill);
+            }
+            // last += String.valueOf(fill).repeat(k - last.length());
+            res.set(res.size() - 1, last.toString());
         }
         return res.toArray(new String[0]);
     }
