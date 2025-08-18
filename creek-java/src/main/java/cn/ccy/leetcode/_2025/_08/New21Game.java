@@ -19,10 +19,9 @@ public class New21Game {
         for (int i = k; i <= n && i < k + maxPts; i++) {
             dp[i] = 1.0;
         }
-        for (int i = k - 1; i >= 0; i--) {
-            for (int j = 1; j <= maxPts; j++) {
-                dp[i] += dp[i + j] / maxPts;
-            }
+        dp[k - 1] = 1.0 * Math.min(n - k + 1, maxPts) / maxPts;
+        for (int i = k - 2; i >= 0; i--) {
+            dp[i] = dp[i + 1] - (dp[i + maxPts + 1] - dp[i + 1]) / maxPts;
         }
         return dp[0];
     }
