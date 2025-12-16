@@ -8,6 +8,7 @@ import java.util.List;
  * @version v 1.0.0
  * @see <a href="https://leetcode.cn/problems/maximum-profit-from-trading-stocks-with-discounts/?envType=daily-question&envId=2025-12-16">3562. 折扣价交易股票的最大利润</a>
  * @since 2025/12/16 23:35
+ * ☆☆☆☆☆ 2025cvd
  */
 public class MaxProfit {
     public static void main(String[] args) {
