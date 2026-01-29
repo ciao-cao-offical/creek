@@ -7,6 +7,7 @@ import java.util.Arrays;
  * @version v 1.0.0
  * @see <a href="https://leetcode.cn/problems/minimum-cost-to-convert-string-ii/?envType=daily-question&envId=2026-01-30">2977. 转换字符串的最小成本 II</a>
  * @since 2026/1/30 00:11
+ * ☆☆☆☆☆ 2025cvd
  */
 public class MinimumCost2 {
     public static void main(String[] args) {
