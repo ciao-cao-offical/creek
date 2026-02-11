@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author caochengyin
  * @version v 1.0.0
- * @see <a href="">...</a>
+ * @see <a href="https://leetcode.cn/problems/longest-balanced-substring-i/description/?envType=daily-question&envId=2026-02-12">3713. 最长的平衡子串 I</a>
  * @since 2026/2/12 00:05
  */
 public class LongestBalanced3 {
