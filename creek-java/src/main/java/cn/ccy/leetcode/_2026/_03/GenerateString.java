@@ -1,0 +1,59 @@
+package cn.ccy.leetcode._2026._03;
+
+/**
+ * @author caochengyin
+ * @version v 1.0.0
+ * @see <a href="https://leetcode.cn/problems/lexicographically-smallest-generated-string/description/?envType=daily-question&envId=2026-03-31">3474. 字典序最小的生成字符串</a>
+ * @since 2026/3/31 00:33
+ */
+public class GenerateString {
+    public static void main(String[] args) {
+
+    }
+
+    public String generateString(String str1, String str2) {
+        int n = str1.length(), m = str2.length();
+        char[] s = new char[n + m - 1];
+        int[] fixed = new int[n + m - 1];
+
+        for (int i = 0; i < s.length; i++) {
+            s[i] = 'a';
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (str1.charAt(i) == 'T') {
+                for (int j = i; j < i + m; j++) {
+                    if (fixed[j] == 1 && s[j] != str2.charAt(j - i)) {
+                        return "";
+                    } else {
+                        s[j] = str2.charAt(j - i);
+                        fixed[j] = 1;
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (str1.charAt(i) == 'F') {
+                boolean flag = false;
+                int idx = -1;
+                for (int j = i + m - 1; j >= i; j--) {
+                    if (str2.charAt(j - i) != s[j]) {
+                        flag = true;
+                    }
+                    if (idx == -1 && fixed[j] == 0) {
+                        idx = j;
+                    }
+                }
+                if (flag) {
+                    continue;
+                } else if (idx != -1) {
+                    s[idx] = 'b';
+                } else {
+                    return "";
+                }
+            }
+        }
+        return new String(s);
+    }
+}
