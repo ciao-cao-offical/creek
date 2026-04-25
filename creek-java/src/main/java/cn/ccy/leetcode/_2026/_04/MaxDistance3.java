@@ -9,6 +9,7 @@ import java.util.List;
  * @version v 1.0.0
  * @see <a href="https://leetcode.cn/problems/maximize-the-distance-between-points-on-a-square/description/?envType=daily-question&envId=2026-04-25">3464. 正方形上的点之间的最大距离</a>
  * @since 2026/4/25 20:24
+ * ★★★★★ 2026cvd
  */
 public class MaxDistance3 {
     public static void main(String[] args) {
