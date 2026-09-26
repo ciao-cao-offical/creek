@@ -10,7 +10,7 @@ import java.util.TreeSet;
  * @version v 1.0.0
  * @see <a href="https://leetcode.cn/problems/brace-expansion-ii/?envType=daily-question&envId=2026-09-25">1096. 花括号展开 II</a>
  * @since 2026/9/25 00:35
- * ★★★★★ 2026cvd
+ * ★★★★★ 2vc026cvd
  */
 public class BraceExpansionII {
     public static void main(String[] args) {
