@@ -1,0 +1,66 @@
+package cn.ccy.leetcode._2026._10;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.PriorityQueue;
+
+/**
+ * @author caochengyin
+ * @version v 1.0.0
+ * @see <a href="https://leetcode.cn/problems/shortest-path-with-at-most-k-consecutive-identical-characters/?envType=daily-question&envId=2026-10-30">3970. 最多 K 个连续相同字符的最短路径</a>
+ * @since 2026/10/30 00:27
+ */
+public class ShortestPath {
+    public static void main(String[] args) {
+
+    }
+
+    public int shortestPath(int n, int[][] edges, String labels, int k) {
+        List<int[]>[] g = new ArrayList[n];
+        Arrays.setAll(g, i -> new ArrayList<>());
+        for (int[] e : edges) {
+            g[e[0]].add(new int[]{e[1], e[2]});
+        }
+
+        long[][] dis = new long[n][k + 1];
+        for (long[] row : dis) {
+            Arrays.fill(row, Integer.MAX_VALUE);
+        }
+        // {最短路长度, 节点编号, 最后连续相同字母个数}
+        PriorityQueue<long[]> pq = new PriorityQueue<>(
+                (a, b) -> Long.compare(a[0], b[0]));
+
+        dis[0][1] = 0;
+        pq.offer(new long[]{0, 0, 1});
+
+        while (!pq.isEmpty()) {
+            long[] cur = pq.poll();
+            long d = cur[0];
+            int x = (int) cur[1], cnt = (int) cur[2];
+
+            if (d > dis[x][cnt]) {
+                continue;
+            }
+            if (x == n - 1) {
+                return (int) d;
+            }
+
+            for (int[] e : g[x]) {
+                int y = e[0], w = e[1];
+                int newCnt = labels.charAt(x) == labels.charAt(y) ? cnt + 1 : 1;
+                if (newCnt > k) {
+                    continue;
+                }
+
+                long nd = d + w;
+                if (nd < dis[y][newCnt]) {
+                    dis[y][newCnt] = nd;
+                    pq.offer(new long[]{nd, y, newCnt});
+                }
+            }
+        }
+
+        return -1;
+    }
+}
